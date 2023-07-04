@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <!--文本-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:text="计算器"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#000000"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:gravity="right|bottom"
+            android:textSize="50dp"
+            android:id="@+id/data"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:gravity="right|bottom"
+            android:textSize="50dp"
+            android:id="@+id/result"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="#808080"
+        android:rowCount="3"
+        android:columnCount="4">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:id="@+id/sqrt"
+            android:textSize="30dp"
+            android:text="√￣" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:id="@+id/div"
+            android:textSize="30dp"
+            android:text="/" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:id="@+id/mul"
+            android:textSize="30dp"
+            android:text="*" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:id="@+id/delete"
+            android:textSize="30dp"
+
+            android:text="DE" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:id="@+id/seven"
+            android:textSize="30dp"
+            android:text="7" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:id="@+id/eight"
+            android:textSize="30dp"
+            android:text="8" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:id="@+id/nine"
+            android:textSize="30dp"
+            android:text="9" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:id="@+id/sub"
+            android:textSize="30dp"
+            android:text="-" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:id="@+id/four"
+            android:textSize="30dp"
+            android:text="4" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:id="@+id/five"
+            android:textSize="30dp"
+            android:text="5" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:id="@+id/six"
+            android:textSize="30dp"
+            android:text="6" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:id="@+id/add"
+            android:textSize="30dp"
+            android:text="+" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:id="@+id/one"
+            android:textSize="30dp"
+            android:text="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:id="@+id/two"
+            android:textSize="30dp"
+            android:text="2" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:id="@+id/three"
+            android:textSize="30dp"
+            android:text="3" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_rowSpan="2"
+            android:id="@+id/equal"
+            android:textSize="30dp"
+            android:text="=" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:id="@+id/ac"
+            android:textSize="30dp"
+            android:text="AC" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:id="@+id/zero"
+            android:textSize="30dp"
+            android:text="0" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:id="@+id/point"
+            android:textSize="40dp"
+            android:text="." />
+
+
+
+
+
+    </GridLayout>
+
+</LinearLayout>
